@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" class="styles">
+</head>
+
+<body>
+    <form>
+        <div class="container mt-4 mb-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h2 class="text-start">Payment form example</h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger text-start" role="alert">
+                        Some fields are missing
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="mb-3 text-start">
+                                <label for="card" class="form-label">Card #</label>
+                                <input type="text" class="form-control" id="card_number" placeholder="XXXXXXXXXXXXXXXX">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3 text-start">
+                                <label for="cvc" class="form-label">CVC #</label>
+                                <input type="text" class="form-control" id="cvc" placeholder="XXX">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3 text-start">
+                                <label for="amount" class="form-label">Amount</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                    <input type="number" class="form-control" id="amount" placeholder="0.00"
+                                        aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3 text-start">
+                                <label for="fname" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="fname">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3 text-start">
+                                <label for="lname" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="lname">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3 text-start">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="city">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3 text-start">
+                                <label for="country" class="form-label">Country</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select your country</option>
+                                    <option value="1">Spain</option>
+                                    <option value="2">Contry 2</option>
+                                    <option value="3">Contry 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3 text-start">
+                                <label for="postalcode" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="postalcode">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3 text-start">
+                                    <label for="card_type" class="form-label">We accept</label>
+                                    <br>
+                                    <div class="bg-secondary d-inline-block p-2">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                <i class="fa-brands fa-cc-mastercard"></i>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                <i class="fa-brands fa-cc-visa"></i>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault3">
+                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault4">
+                                            <label class="form-check-label" for="flexRadioDefault4">
+                                                <i class="fa-brands fa-cc-paypal"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3 text-start">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="floatingTextarea2"
+                                        style="height: 100px"></textarea>
+                                    <small id="textareaHelp" class="form-text text-muted">Add any notes here.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-secondary me-md-2" type="reset">Cancel</button>
+                        <button class="btn btn-primary me-md-2" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
